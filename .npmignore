@@ -1,0 +1,15 @@
+example/
+.github
+.eslintrc.js
+.prettierrc.js
+
+node_modules
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.editorconfig
+.eslintcache
+package-lock.json
