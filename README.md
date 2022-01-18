@@ -1,5 +1,8 @@
 # serverless-kms-alias
 
+[![NPM version](https://img.shields.io/npm/v/serverless-kms-alias.svg?style=flat)](https://npmjs.org/package/serverless-kms-alias)
+[![node version](https://img.shields.io/node/v/serverless-kms-alias.svg?style=flat)](https://nodejs.org)
+
 Serverless plugin to expand a KMS alias variable to the ARN of the KMS key
 
 ## Usage
