@@ -1,34 +1,34 @@
 {
   "name": "serverless-kms-alias",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">= 12"
   },
   "dependencies": {
-    "@aws-sdk/client-kms": "^3.47.0"
+    "@aws-sdk/client-kms": "^3.52.0"
   },
   "devDependencies": {
     "@types/lodash": "4.14.178",
-    "@types/serverless": "1.78.41",
-    "@typescript-eslint/eslint-plugin": "5.10.0",
-    "@typescript-eslint/parser": "5.10.0",
-    "eslint": "8.7.0",
+    "@types/serverless": "1.78.39",
+    "@typescript-eslint/eslint-plugin": "5.12.1",
+    "@typescript-eslint/parser": "5.12.1",
+    "eslint": "8.9.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "16.1.0",
-    "eslint-config-prettier": "8.3.0",
+    "eslint-config-prettier": "8.4.0",
     "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-jsdoc": "37.6.1",
+    "eslint-plugin-jsdoc": "37.9.4",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-security": "1.4.0",
     "husky": "7.0.4",
-    "lint-staged": "12.2.0",
-    "markdownlint-cli": "0.30.0",
+    "lint-staged": "12.3.4",
+    "markdownlint-cli": "0.31.1",
     "npm-run-all": "4.1.5",
-    "pinst": "2.1.6",
+    "pinst": "3.0.0",
     "prettier": "2.5.1",
     "prettier-plugin-packagejson": "2.2.15",
-    "typescript": "4.5.4"
+    "typescript": "4.5.5"
   },
   "main": "dist/index.js",
   "license": "MIT",
