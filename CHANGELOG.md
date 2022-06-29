@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.0.1 - 2022-06-29
+
+- Update npms
+
 ## 2.0.0 - 2022-05-23
 
 - Drop Node.js 12 support
