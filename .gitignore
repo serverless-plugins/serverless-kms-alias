@@ -31,7 +31,6 @@ node_modules
 .netbeans
 nbproject
 .idea
-.editorconfig
 .eslintcache
 
 dist/
