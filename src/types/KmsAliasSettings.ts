@@ -1,3 +1,3 @@
 export interface KmsAliasSettings {
-  stages?: string[];
+  enabled?: string;
 }

@@ -45,7 +45,7 @@ functions:
     kmsKeyArn: '${kms:arn:aws:kms:${aws:region}:${aws:accountId}:alias/aws/lambda}'
 ```
 
-### Example - Enable for specific stages
+### Example - Disable the plugin
 
 ```yaml
 service: foo
@@ -58,9 +58,7 @@ plugins:
 
 custom:
   kmsAlias:
-    stages:
-      # list of stages for which the plugin should be enabled
-      - production
+    enabled: false
 
 functions:
   foo:

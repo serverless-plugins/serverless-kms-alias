@@ -1,6 +1,6 @@
 import { DescribeKeyCommand, KMSClient } from '@aws-sdk/client-kms';
 
-import type { ServerlessInstance, ServerlessOptions } from './types';
+import type { ServerlessInstance } from './types';
 
 interface ResolveParams {
   address: string;
@@ -19,7 +19,7 @@ interface ServerlessVariableSource {
 class KmsAliasPlugin {
   public configurationVariablesSources: Record<string, ServerlessVariableSource>;
 
-  public constructor(serverless: ServerlessInstance, options: ServerlessOptions) {
+  public constructor(serverless: ServerlessInstance) {
     this.configurationVariablesSources = {
       kms: {
         async resolve({ address }: ResolveParams): Promise<ResolveResult> {
@@ -27,17 +27,19 @@ class KmsAliasPlugin {
             throw new Error(`Expected variable in the form of 'kms:alias/foo'`);
           }
 
-          if (serverless.service?.custom?.kmsAlias?.stages?.length) {
-            const stage = options?.stage || serverless.config?.stage || serverless.service?.provider?.stage;
-            if (stage) {
-              if (!serverless.service.custom.kmsAlias.stages.includes(stage)) {
-                serverless.cli.log(`Info: KMS Alias plugin not enabled for stage`);
+          if (serverless.service?.custom?.kmsAlias?.enabled != null) {
+            try {
+              const isEnabled = serverless.service.custom.kmsAlias.enabled ? Boolean(JSON.parse(`${serverless.service.custom.kmsAlias.enabled}`.toLowerCase())) : false;
+              if (!isEnabled) {
+                serverless.cli.log(`Info: KMS Alias plugin not enabled`);
                 return {
                   value: address,
                 };
               }
-            } else {
-              serverless.cli.log(`Warn: Unable to determine stage for KMS alias`);
+            } catch (ex) {
+              throw new Error(`Unable to get enabled configuration for kms alias.`, {
+                cause: ex,
+              });
             }
           }
 

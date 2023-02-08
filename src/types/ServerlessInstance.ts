@@ -3,9 +3,6 @@ import type { AwsAuthInputConfig } from '@aws-sdk/middleware-signing/dist-types/
 import type { KmsAliasSettings } from './KmsAliasSettings';
 
 export interface ServerlessInstance {
-  config?: {
-    stage?: string;
-  };
   providers: {
     aws: {
       getCredentials(): AwsAuthInputConfig['credentials'];
@@ -13,9 +10,6 @@ export interface ServerlessInstance {
     };
   };
   service: {
-    provider: {
-      stage?: string;
-    };
     custom: {
       kmsAlias?: KmsAliasSettings;
     };

@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.2.0 - 2023-02-08
+
+- Replace enable/disable by stage with `enabled`
+
 ## 2.1.0 - 2023-02-08
 
 - Add configuration to enable for explicit stages. Fix #3
