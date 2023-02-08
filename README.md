@@ -18,7 +18,7 @@ service: foo
 provider:
   name: aws
   kmsKeyArn: '${kms:alias/aws/lambda}'
-  runtime: nodejs14.x
+  runtime: nodejs16.x
 
 plugins:
   - serverless-kms-alias
@@ -34,10 +34,33 @@ functions:
 service: foo
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
 
 plugins:
   - serverless-kms-alias
+
+functions:
+  foo:
+    handler: foo.handler
+    kmsKeyArn: '${kms:arn:aws:kms:${aws:region}:${aws:accountId}:alias/aws/lambda}'
+```
+
+### Example - Enable for specific stages
+
+```yaml
+service: foo
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+plugins:
+  - serverless-kms-alias
+
+custom:
+  kmsAlias:
+    stages:
+      # list of stages for which the plugin should be enabled
+      - production
 
 functions:
   foo:

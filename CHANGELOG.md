@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.1.0 - 2023-02-08
+
+- Add configuration to enable for explicit stages. Fix #3
+- Update npms
+
 ## 2.0.4 - 2022-12-06
 
 - Update npms
