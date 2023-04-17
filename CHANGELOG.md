@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.2.1 - 2023-04-17
+
+- Update npms
+
 ## 2.2.0 - 2023-02-08
 
 - Replace enable/disable by stage with `enabled`
