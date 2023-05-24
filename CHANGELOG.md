@@ -1,5 +1,10 @@
 # Change Log
 
+## 3.0.0 - 2023-05-24
+
+- Remove support for Node.js v14. Support Node.js v20.
+- Update npms
+
 ## 2.2.1 - 2023-04-17
 
 - Update npms
