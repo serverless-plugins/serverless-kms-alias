@@ -1,4 +1,4 @@
-import type { AwsAuthInputConfig } from '@aws-sdk/middleware-signing/dist-types/configurations';
+import type { AwsAuthInputConfig } from '@aws-sdk/middleware-signing/dist-types';
 
 import type { KmsAliasSettings } from './KmsAliasSettings';
 
@@ -9,8 +9,8 @@ export interface ServerlessInstance {
       getRegion(): string;
     };
   };
-  service: {
-    custom: {
+  service?: {
+    custom?: {
       kmsAlias?: KmsAliasSettings;
     };
   };
