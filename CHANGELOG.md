@@ -1,5 +1,10 @@
 # Change Log
 
+## 4.0.0 - 2023-10-05
+
+- Remove support for Node.js v16
+- Update npms
+
 ## 3.0.1 - 2023-07-24
 
 - Update npms
