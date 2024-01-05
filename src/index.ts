@@ -29,7 +29,7 @@ class KmsAliasPlugin {
 
           if (serverless.service?.custom?.kmsAlias?.enabled != null) {
             try {
-              const isEnabled = serverless.service.custom.kmsAlias.enabled ? Boolean(JSON.parse(`${serverless.service.custom.kmsAlias.enabled}`.toLowerCase())) : false;
+              const isEnabled = serverless.service.custom.kmsAlias.enabled ? Boolean(JSON.parse(serverless.service.custom.kmsAlias.enabled.toLowerCase())) : false;
               if (!isEnabled) {
                 serverless.cli.log(`Info: KMS Alias plugin not enabled`);
                 return {
