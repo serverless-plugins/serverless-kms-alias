@@ -1,11 +1,11 @@
-import type { AwsAuthInputConfig } from '@aws-sdk/middleware-signing/dist-types';
+import type { HttpAuthSchemeInputConfig } from '@aws-sdk/client-kms/dist-types/auth/httpAuthSchemeProvider';
 
 import type { KmsAliasSettings } from './KmsAliasSettings';
 
 export interface ServerlessInstance {
   providers: {
     aws: {
-      getCredentials(): AwsAuthInputConfig['credentials'];
+      getCredentials(): HttpAuthSchemeInputConfig['credentials'];
       getRegion(): string;
     };
   };
