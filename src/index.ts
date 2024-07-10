@@ -75,4 +75,4 @@ class KmsAliasPlugin {
   }
 }
 
-export = KmsAliasPlugin;
+export default KmsAliasPlugin;
