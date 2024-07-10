@@ -1,5 +1,11 @@
 # Change Log
 
+## 5.0.0 - 2024-07-10
+
+- Publish as CJS and ESM
+- Upgrade eslint to flat config
+- Update npms and dependencies
+
 ## 4.0.7 - 2024-05-13
 
 - Update npms

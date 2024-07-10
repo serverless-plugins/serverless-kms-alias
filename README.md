@@ -18,7 +18,7 @@ service: foo
 provider:
   name: aws
   kmsKeyArn: '${kms:alias/aws/lambda}'
-  runtime: nodejs16.x
+  runtime: nodejs20.x
 
 plugins:
   - serverless-kms-alias
@@ -34,7 +34,7 @@ functions:
 service: foo
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs20.x
 
 plugins:
   - serverless-kms-alias
@@ -51,7 +51,7 @@ functions:
 service: foo
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs20.x
 
 plugins:
   - serverless-kms-alias

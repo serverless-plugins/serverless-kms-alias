@@ -1,6 +1,6 @@
 import { DescribeKeyCommand, KMSClient } from '@aws-sdk/client-kms';
 
-import type { ServerlessInstance } from './types';
+import type { ServerlessInstance } from './types/index.js';
 
 interface ResolveParams {
   address: string;
@@ -23,7 +23,7 @@ class KmsAliasPlugin {
     this.configurationVariablesSources = {
       kms: {
         async resolve({ address }: ResolveParams): Promise<ResolveResult> {
-          if (!/^(alias\/[a-zA-Z]|arn:aws:kms:[\w-]*:[\d]*:alias)/i.test(address)) {
+          if (!/^(alias\/[a-z]|arn:aws:kms:[\w-]*:\d*:alias)/i.test(address)) {
             throw new Error(`Expected variable in the form of 'kms:alias/foo'`);
           }
 

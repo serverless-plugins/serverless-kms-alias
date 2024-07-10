@@ -1,7 +1,7 @@
 example/
 .github
 .eslintrc.js
-.prettierrc.js
+.prettierrc.cjs
 
 node_modules
 *~

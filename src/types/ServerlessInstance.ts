@@ -1,6 +1,6 @@
 import type { HttpAuthSchemeInputConfig } from '@aws-sdk/client-kms/dist-types/auth/httpAuthSchemeProvider';
 
-import type { KmsAliasSettings } from './KmsAliasSettings';
+import type { KmsAliasSettings } from './KmsAliasSettings.js';
 
 export interface ServerlessInstance {
   providers: {
