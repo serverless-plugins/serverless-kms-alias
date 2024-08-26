@@ -1,5 +1,9 @@
 # Change Log
 
+## 5.0.1 - 2024-08-26
+
+- Update npms
+
 ## 5.0.0 - 2024-07-10
 
 - Publish as CJS and ESM
