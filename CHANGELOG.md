@@ -1,5 +1,9 @@
 # Change Log
 
+## 5.0.2 - 2024-09-30
+
+- Update npms
+
 ## 5.0.1 - 2024-08-26
 
 - Update npms
