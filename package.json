@@ -1,6 +1,6 @@
 {
   "name": "serverless-kms-alias",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,10 @@
       }
     }
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "unbuild",
     "check:types": "tsc --noEmit",
@@ -30,10 +33,19 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.md": ["prettier --write", "markdownlint --config=.github/linters/.markdown-lint.yml --fix"],
-    "./*.cjs": ["eslint --fix"],
-    "./*.mjs": ["eslint --fix"],
-    "*.ts": ["eslint --fix"]
+    "*.md": [
+      "prettier --write",
+      "markdownlint --config=.github/linters/.markdown-lint.yml --fix"
+    ],
+    "./*.cjs": [
+      "eslint --fix"
+    ],
+    "./*.mjs": [
+      "eslint --fix"
+    ],
+    "*.ts": [
+      "eslint --fix"
+    ]
   },
   "license": "MIT",
   "repository": "github:serverless-plugins/serverless-kms-alias",
