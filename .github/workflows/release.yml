@@ -19,6 +19,7 @@ jobs:
       pull-requests: write # To be able to comment on released pull requests
       id-token: write # To enable use of OIDC for npm provenance
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Checkout
