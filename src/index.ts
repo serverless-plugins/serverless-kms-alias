@@ -46,7 +46,7 @@ class KmsAliasPlugin {
           serverless.cli.log(`Info: Fetching KMS key for alias: ${address}`);
 
           const client = new KMSClient({
-            ...serverless.providers.aws.getCredentials(),
+            credentials: serverless.providers.aws.getCredentials(),
             region: serverless.providers.aws.getRegion(),
           });
           const command = new DescribeKeyCommand({
