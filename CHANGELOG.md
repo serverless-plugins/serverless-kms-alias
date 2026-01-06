@@ -1,3 +1,5 @@
+## [5.0.6](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.5...5.0.6) (2026-01-06)
+
 ## [5.0.5](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.4...5.0.5) (2026-01-06)
 
 ## 5.0.4 - 2024-12-17
