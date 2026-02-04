@@ -1,3 +1,11 @@
+## [5.0.19](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.18...5.0.19) (2026-02-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @aws-sdk/client-kms to v3.980.0 ([#46](https://github.com/serverless-plugins/serverless-kms-alias/issues/46)) ([49906eb](https://github.com/serverless-plugins/serverless-kms-alias/commit/49906ebf1e68a8603e82f380c9daddb0a152885b))
+- **deps:** update dependency @aws-sdk/client-kms to v3.982.0 ([#50](https://github.com/serverless-plugins/serverless-kms-alias/issues/50)) ([3f24910](https://github.com/serverless-plugins/serverless-kms-alias/commit/3f2491018192747f0b3a191fd2e5815592719aca))
+- revert invalid credential object ([#51](https://github.com/serverless-plugins/serverless-kms-alias/issues/51)) ([c060d9f](https://github.com/serverless-plugins/serverless-kms-alias/commit/c060d9f7dd0b02e2575dd1c0842cf94b051d18d2)), closes [#44](https://github.com/serverless-plugins/serverless-kms-alias/issues/44)
+
 ## [5.0.18](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.17...5.0.18) (2026-01-29)
 
 ### Bug Fixes
