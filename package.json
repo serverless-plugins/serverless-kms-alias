@@ -65,7 +65,7 @@
     "@types/lodash": "4.17.23",
     "@types/serverless": "3.12.27",
     "eslint": "9.39.2",
-    "eslint-config-decent": "3.1.113",
+    "eslint-config-decent": "3.1.114",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "markdownlint-cli": "0.47.0",
