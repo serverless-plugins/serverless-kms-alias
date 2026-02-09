@@ -53,7 +53,7 @@
     "node": ">= 18"
   },
   "dependencies": {
-    "@aws-sdk/client-kms": "3.985.0"
+    "@aws-sdk/client-kms": "3.986.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
