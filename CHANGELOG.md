@@ -1,3 +1,9 @@
+## [5.0.26](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.25...5.0.26) (2026-02-13)
+
+### Bug Fixes
+
+- **deps:** update dependency @aws-sdk/client-kms to v3.989.0 ([#67](https://github.com/serverless-plugins/serverless-kms-alias/issues/67)) ([22fdc1a](https://github.com/serverless-plugins/serverless-kms-alias/commit/22fdc1a94bb23b5bcaf36fc59f47b046f22741eb))
+
 ## [5.0.25](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.24...5.0.25) (2026-02-12)
 
 ### Bug Fixes
