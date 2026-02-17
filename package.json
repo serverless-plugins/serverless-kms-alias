@@ -1,6 +1,6 @@
 {
   "name": "serverless-kms-alias",
-  "version": "5.0.27",
+  "version": "5.0.28",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
