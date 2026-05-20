@@ -1,3 +1,5 @@
+## [5.0.87](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.86...5.0.87) (2026-05-20)
+
 ## [5.0.86](https://github.com/serverless-plugins/serverless-kms-alias/compare/5.0.85...5.0.86) (2026-05-18)
 
 ### Bug Fixes
