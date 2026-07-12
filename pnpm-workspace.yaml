@@ -1,0 +1,37 @@
+# pnpm 11 settings (https://pnpm.io/settings). Supply-chain hardening defaults
+# (minimumReleaseAge 1440, strictDepBuilds, blockExoticSubdeps, verifyDepsBeforeRun)
+# are left at their pnpm 11 defaults.
+
+# Native binaries ship as prebuilt optional deps; the postinstall fallback is not needed.
+allowBuilds:
+  unrs-resolver: false
+
+# Packages resolved before they cleared the default 1-day release-age cooldown.
+minimumReleaseAgeExclude:
+  - '@aws-sdk/client-kms@3.1085.0'
+  - semantic-release@25.0.6
+
+# vite-plus ships its vite build as @voidzero-dev/vite-plus-core; alias `vite` to it
+# so imports like `import { type UserConfig } from 'vite'` resolve to the same build.
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@0.2.4
+  vite-plus: 0.2.4
+overrides:
+  vite: 'catalog:'
+
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: '*'
+  # eslint-config-decent is consumed only through its ./oxlint export; its ESLint
+  # and oxlint peers are provided internally by vite-plus or intentionally absent.
+  ignoreMissing:
+    - eslint
+    - eslint-plugin-*
+    - '@stylistic/eslint-plugin'
+    - '@typescript-eslint/*'
+    - '@vitest/eslint-plugin'
+    - oxlint
+    - oxlint-*
+    - typescript-eslint

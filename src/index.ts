@@ -1,6 +1,6 @@
 import { DescribeKeyCommand, KMSClient } from '@aws-sdk/client-kms';
 
-import type { ServerlessInstance } from './types/index.js';
+import { type ServerlessInstance } from './types/index.js';
 
 interface ResolveParams {
   address: string;
