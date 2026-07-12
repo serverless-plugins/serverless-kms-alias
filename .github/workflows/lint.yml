@@ -32,6 +32,8 @@ jobs:
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Machine-generated lockfile; codespell flags package names as typos
+          FILTER_REGEX_EXCLUDE: (^|/)pnpm-lock\.yaml$
           FIX_CSS_PRETTIER: false
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_ANSIBLE: false
@@ -46,10 +48,14 @@ jobs:
           VALIDATE_JSCPD: false
           VALIDATE_JSON: false
           VALIDATE_JSONC: false
+          VALIDATE_JSONC_PRETTIER: false
           VALIDATE_JSON_PRETTIER: false
           VALIDATE_JAVASCRIPT_ES: false
           VALIDATE_JAVASCRIPT_PRETTIER: false
           VALIDATE_JAVASCRIPT_STANDARD: false
+          # Formatting is handled by oxfmt (vp fmt); the prettier config was removed
+          VALIDATE_MARKDOWN_PRETTIER: false
+          VALIDATE_YAML_PRETTIER: false
           VALIDATE_TRIVY: false
           VALIDATE_TSX: false
           VALIDATE_TYPESCRIPT_ES: false
