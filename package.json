@@ -64,7 +64,7 @@
     "@semantic-release/release-notes-generator": "14.1.1",
     "@types/lodash": "4.17.24",
     "@types/serverless": "3.12.28",
-    "eslint": "10.6.0",
+    "eslint": "10.7.0",
     "eslint-config-decent": "4.2.38",
     "husky": "9.1.7",
     "lint-staged": "17.0.8",
@@ -73,7 +73,7 @@
     "pinst": "3.0.0",
     "prettier": "3.9.5",
     "prettier-plugin-packagejson": "3.0.2",
-    "semantic-release": "25.0.5",
+    "semantic-release": "25.0.6",
     "typescript": "6.0.3",
     "unbuild": "3.6.1"
   },
